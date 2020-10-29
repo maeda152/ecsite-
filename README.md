@@ -12,6 +12,6 @@ Windows上で高速でchocolatey 環境を作る手順
 
 ### 学校の総合実践用のリポジトリ
 
-1年生はhtml/css<br>
+html/css 中村　1年生<br>
 バックエンド　中村　加藤　川本<br>
 インフラ・環境構築　中村
