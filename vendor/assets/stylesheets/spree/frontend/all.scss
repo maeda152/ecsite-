@@ -53,6 +53,14 @@ input[type="checkbox"], label {
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
 
+.container .four.columns {
+    width: 220px;
+    display: none;
+}
 
-
-
+@media only screen and (max-width: 959px) and (min-width: 768px){
+.container .four.columns {
+    width: 172px;
+    display: none;
+}
+}
