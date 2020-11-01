@@ -12,8 +12,21 @@ body {
     color: #464646;
     text-align: center;
   }
-
-
+  .container .sixteen.columns {
+      width: 100%;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.container .column, .container .columns {
+    margin-left: 0px;
+  }
+  nav #main-nav-bar li#link-to-cart {
+      float: left;
+  }
   input[type="submit"], input[type="button"], input[type="reset"], button, a.button {
     background-color: #000000;
   }
