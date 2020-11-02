@@ -13,6 +13,18 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
+ 
+ *, *::before, *::after {
+  list-style: none;
+}
+.header-nav{
+ margin-top: 5rem;
+}
+.main-menu{
+  margin-top: 1.5rem;
+}
+
 .enja{
     margin-left: 3rem;
 }

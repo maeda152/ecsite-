@@ -13,7 +13,10 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'solidus'
 gem 'solidus_auth_devise'
-gem 'wdm', '>= 0.1.0'
+
+gem 'uglifier'
+gem 'jquery-rails'
+gem 'bootstrap'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -46,5 +49,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
+platforms :mswin do 
+  gem "wdm", :group => [:development, :test]
+end
 gem 'solidus_paypal_commerce_platform'

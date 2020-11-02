@@ -69,7 +69,6 @@ src: url(assets/Neko_no_Mezame.ttf);
 }
 
 body {
-min-width: 980px;
 background: #e6e6e6 none repeat scroll 0 0;
 color: #464646;
 font-size: 100%;
@@ -84,13 +83,14 @@ border: 0;
 
 
 #global_header {
-background-image: image-url("header_background.png");
+background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 background-repeat: repeat-x;
 width: 100%;
+height: 5rem;
 }
 
 header {
-color: rgba(200, 200, 200, 0.8);
+color: #44494c;
 font-size: 12px;
 }
 
@@ -124,7 +124,7 @@ ul {
 
 header a {
 text-decoration: none;
-color: rgba(200, 200, 200, 0.8);
+color: #44494c;
 }
 
 #global_nav {
@@ -155,6 +155,7 @@ ul {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  margin-bottom: 13rem;
 }
 .banner .imgBx{
   position: absolute;
@@ -565,4 +566,8 @@ right: 0;
   .banner {
       margin-bottom: 15rem;
   }
+}
+.container {
+  max-width: 100%;
+  padding: 0;
 }
