@@ -13,7 +13,9 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'solidus'
 gem 'solidus_auth_devise'
-gem 'wdm', '>= 0.1.0'
+platforms :mswin do 
+  gem "wdm", :group => [:development, :test]
+end
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'bootstrap'
