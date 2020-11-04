@@ -33,8 +33,10 @@ a {
 display: flex;
 margin-top: -15vh;
 flex-wrap: wrap;
-margin-left: 8rem;
+margin: 0 auto;
+max-width: 1500px;
 margin-bottom: 4rem;
+padding-left: 2rem;
 img {
   border: 0;
   width: 6rem;
@@ -43,8 +45,10 @@ img {
 }
 .flex-list2 {
 display: flex;
-margin-left: 8rem;
+margin: 0 auto;
+max-width: 1500px;
 flex-wrap: wrap;
+padding-left: 2rem;
 img {
   border: 0;
   width: 6rem;
@@ -124,7 +128,9 @@ ul {
 
 header a {
 text-decoration: none;
-color: #44494c;
+color: #3a3737;
+font-size: 16px;
+text-shadow: 5px 5px 5px #fff, 0 0 0 #2f2c2c;
 }
 
 #global_nav {
@@ -155,7 +161,6 @@ ul {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 13rem;
 }
 .banner .imgBx{
   position: absolute;
@@ -178,6 +183,7 @@ ul {
 }
 .banner .imgBx img.active{
   opacity: 1;
+  object-fit: fill;
 }
 
 .controls{
@@ -401,7 +407,7 @@ ul {
      padding: 8px 20px;
      transition: 0.5s;
    }
-   .card:hover .contentBx2 .size,{
+   .card:hover .contentBx2 .size{
      opacity: 1;
      visibility: visible;
      transition-delay: 0.5s;
@@ -431,7 +437,7 @@ ul {
       cursor:pointer;
     }
     .card .contentBx2 .size span:hover{
-      background: 9bdc28;
+      background: #9bdc28;
     }
     .card .contentBx2 .color span{
       width: 20px;
@@ -547,6 +553,10 @@ right: 0;
 }
 .contentBx div.active {
     margin-left: 0px;
+}
+.banner .imgBx img.active{
+  opacity: 1;
+  object-fit: cover;
 }
 }
 @media only screen and (max-width: 700px){

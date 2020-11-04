@@ -7,11 +7,20 @@
  *= require_self
  *= require_tree .
 */
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     background: #ced6d6 none repeat scroll 0 0;
     color: #464646;
     text-align: center;
+    font-family: 'Noto Serif JP', serif;
   }
+.top{
+  background-image: linear-gradient(-225deg, #81d8ef 0%, #bdbbe6 100%);
+}
+
   .container .sixteen.columns {
       width: 100%;
   }
@@ -306,6 +315,12 @@ input[type="checkbox"], label {
     .header-container {
       height: 38px;
       width: 100%;
+    }
+
+    .main-menu a{
+      font-size: 21px;
+      font-family: 'Noto Serif JP', serif;
+      text-shadow: 10px 10px 10px #fff, 0 0 0 #000;
     }
   
 
