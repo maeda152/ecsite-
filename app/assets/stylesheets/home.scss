@@ -494,7 +494,7 @@ margin-bottom: 30px;
 footer {
 background-color: #f4f4f4;
 font-size: 12px;
-width: 125%;
+width: 95%;
 }
 
 .footer_inner {
@@ -555,6 +555,11 @@ right: 0;
   opacity: 1;
   object-fit: cover;
 }
+footer {
+  background-color: #f4f4f4;
+  font-size: 12px;
+  width: 90%;
+}
 }
 @media only screen and (max-width: 700px){
 .flex-list {
@@ -592,14 +597,45 @@ right: 0;
         margin-left: 5rem;
     }
     }
-  
 
-
-@media only screen and (max-width: 450px){
-  .banner {
-      margin-bottom: 15rem;
+    @media only screen and (max-width: 450px){
+      .flex-list {
+          display: flex;
+          margin-top: 13vh;
+          margin-left: 1rem;
+      }
+      .flex-list2 {
+          display: flex;
+          margin-top: -15vh;
+          margin-left: 1rem;
+      }
+      footer {
+        background-color: #f4f4f4;
+        font-size: 12px;
+        width: 80%;
+    }
+    .banner {
+      margin-bottom: 0rem;
   }
-}
+      }
+      @media only screen and (max-width: 400px){
+      footer {
+          background-color: #f4f4f4;
+          font-size: 12px;
+          width: 73%;
+      }
+      .flex-list {
+        display: flex;
+        margin-top: 13vh;
+        margin-left: -2rem;
+    }
+    .flex-list2 {
+        display: flex;
+        margin-top: -15vh;
+        margin-left: -2rem;
+    }
+    }
+
 .container {
   max-width: 100%;
   padding: 0;
