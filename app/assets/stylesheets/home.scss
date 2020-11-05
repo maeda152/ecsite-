@@ -163,7 +163,6 @@ ul {
   min-height: 100vh;
 }
 .banner .imgBx{
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -548,9 +547,7 @@ right: 0;
     margin-top: -15vh;
     margin-left: -5rem;
 }
-.banner .imgBx img {
-    margin-left: -25rem;
-}
+
 .contentBx div.active {
     margin-left: 0px;
 }

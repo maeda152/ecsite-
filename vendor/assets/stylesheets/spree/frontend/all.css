@@ -18,8 +18,8 @@ footer{
   padding: 50px;
   color: #fff;
   background-color: #011c39;
-  width: 190%;
-  margin-left: -30rem;
+  width: 100%;
+  margin-left: 0rem;
 }
 
 .footer > *{
