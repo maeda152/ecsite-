@@ -562,7 +562,7 @@ right: 0;
 @media only screen and (max-width: 700px){
 .flex-list {
     display: flex;
-    margin-top: -15vh;
+    margin-top: -9vh;
     margin-left: 5rem;
 }
 .flex-list2 {
@@ -571,6 +571,32 @@ right: 0;
     margin-left: 5rem;
 }
 }
+@media only screen and (max-width: 850px){
+  .flex-list {
+      display: flex;
+      margin-top: 10vh;
+      margin-left: 5rem;
+  }
+  .flex-list2 {
+      display: flex;
+      margin-top: -15vh;
+      margin-left: 5rem;
+  }
+  }
+  @media only screen and (max-width: 1400px){
+    .flex-list {
+        display: flex;
+        margin-top: 13vh;
+        margin-left: 5rem;
+    }
+    .flex-list2 {
+        display: flex;
+        margin-top: -15vh;
+        margin-left: 5rem;
+    }
+    }
+  
+
 
 @media only screen and (max-width: 450px){
   .banner {
