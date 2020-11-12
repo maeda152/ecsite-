@@ -1,7 +1,10 @@
 // Place all the styles related to the weapon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.flex-list {
-    display: flex;
+
+.flex-list .container2 {
+    flex: auto;
+    margin: 5px;
     margin-top: 4rem;
+    margin-bottom: 3rem;
 }
