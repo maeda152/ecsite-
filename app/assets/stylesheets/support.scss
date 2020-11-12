@@ -17,7 +17,7 @@ h4 {
   height: 150px;
 }
 
-.main {
+.mai {
   /* border:2px solid #000; */
   text-align: center;
   width: 610px;
@@ -69,10 +69,9 @@ section {}
 .op {
   padding-right: 15px;
   padding-left: 15px;
-  background: url(/assets/support/看板１.png) no-repeat center center scroll white;
+  background: url(/assets/support/看板１.png) no-repeat center center scroll #e6e6e6;
   background-size: 600px;
   height: 565px;
-  background-color:#e6e6e6;
 }
 
 .paint {
@@ -83,16 +82,14 @@ background-size:100%; */
 
 .emp {
   height: 265px;
-  background: url(/assets/support/看板2上.png) no-repeat center center scroll white;
+  background: url(/assets/support/看板2上.png) no-repeat center center scroll #e6e6e6;
   background-size: 600px;
-  background-color:#e6e6e6;
 }
 
 .long {
-  background: url(/assets/support/看板2下.png) repeat-y center 0 scroll white;
+  background: url(/assets/support/看板2下.png) repeat-y center 0 scroll #e6e6e6;
   background-size: 600px;
   padding-bottom: 50px;
-  background-color:#e6e6e6;
 }
 
 .question {
