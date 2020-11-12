@@ -39,6 +39,7 @@ h2{
 .footer ul{
   list-style:none;
   padding-left: 0;
+  font-size: 20px;
 }
 .footer li{
   line-height: 2em;
@@ -79,4 +80,18 @@ h2{
 }
 .socials a i{
   color: #e7f2f4;
+}
+
+
+
+@media screen and (min-width: 770px){
+  .pro{
+    margin-right: 33rem; 
+  }
+  .features{
+    margin-left: 20rem;
+  }
+  .features2{
+    margin-right: 23rem;
+  }
 }
