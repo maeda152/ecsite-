@@ -1,7 +1,11 @@
-
-<h1>お問い合わせ</h1>
-
-<%= form_with model: @contact, local: true do |form| %>
-  <%= render "form", form: form %>
-  <div><%= form.submit "送信" %></div>
-<% end %>
+<div class="contact">
+  <%= render partial: 'template/header' %>
+  <h1>Contacts</h1>
+  
+ <div class="contact_table">
+  <%= form_with model: @contact, local: true do |form| %>
+    <%= render "form", form: form %>
+    <div class="button"><%= form.submit "送信", :class=>"submit" %></div>
+  <% end %>
+ </div>
+</div>
