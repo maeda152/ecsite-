@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+mount SolidusPaypalCommercePlatform::Engine, at: '/solidus_paypal_commerce_platform'
   get 'weapon/sword'
   get 'weapon/rance'
   get 'weapon/axe'

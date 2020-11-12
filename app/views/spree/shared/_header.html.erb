@@ -6,10 +6,42 @@
     <meta name=descripstion content="">
     <title>There are potions and weapons ～ポーション有リマス～</title>
   </head> 
+
+
+  <script>
+  $(function () {
+    var setupSpMenuTrigger = function () {
+      $('.menu-trigger').on('click', function () {
+        $(this).toggleClass('active');
+        var headerNavContainer = $('.header-nav-container');
+        if ($(this).hasClass('active')) {
+          headerNavContainer.css('right', 0);
+        } else {
+          headerNavContainer.css('right', '-100%');
+        }
+      });
+    };
+    
+    
+    setupSpMenuTrigger();
+    setupCurrentMenu = function (name) {
+      var targetLink = $('.menu-' + name + '-container a');
+      targetLink.addClass('current');
+      var targetIndex = targetLink.data('switch-target');
+      var showTarget = $('.switch-fade-in-target-' + targetIndex);
+      showTarget.stop();
+      showTarget.fadeIn();
+    }; 
+  });
+</script>
+
+
+
   <body>
     <header id="global_header">
       <div class="header_inner">
         <div class="header_logo">
+        <%= image_tag 'logo.png',:alt => '商品カタログ' ,:size =>'80x80' %>
           <h1>
             <a href="home.html">
             </a>
@@ -20,11 +52,9 @@
             <li><%= link_to "トップページ","/" %></li>
             <li><%= link_to "サイトマップ","/sitemap/index" %></li>
             <li><%= link_to "お問い合わせ先", 'contacts/new' %></li>
-            <li><%= link_to "新規登録", 'ja/signup' %></li>
-            <li><%= link_to "ログイン", 'ja/login' %></li>
+            <li><%= link_to "新規登録", 'signup' %></li>
+            <li><%= link_to "ログイン", 'login' %></li>
           </ul>
-          
-
         </div>
       </div>
     </header>
@@ -54,6 +84,8 @@
           <a href="">
               <%= image_tag 'wepons.png',:alt => 'ウエポン・ガイド' ,:size =>'160x45' %>
           </a>
+
+          
           <div class="dropdown">
             <ul>
               <li class="padd"><h4><%= link_to "ウエポンガイド","/guide/index" %></h4></li>
@@ -77,9 +109,42 @@
         </li>
       </ul>
     </nav>
+    <div class="header">
 
+                    <div class="header-nav-container">
+                        <nav class="header-nav">
+                            <ul>
+                    
+                                <li class="main-menu">                          
+                                  <%= link_to "トップページ","/" %>
+                                </li>
+                                <li class="main-menu">
+                                  <%= link_to "サイトマップ","/sitemap/index" %>                                                                       
+                                </li>
+                                <li class="main-menu">                                              
+                                  <%= link_to "お問い合わせ先", 'contacts/new' %>
+                                </li>
+                                <li class="main-menu">
+                                  <%= link_to "新規登録", 'signup' %>
+                                </li>
 
-
+                                <li class="main-menu">
+                                  <%= link_to "ログイン", 'login' %>
+                                </li>
+          
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                        <div class="menu-open-button">
+                            <div class="menu-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>      
+                
 
 <header id="header" class="row" data-hook>
   <%= render partial: 'spree/shared/nav_bar' %>

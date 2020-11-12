@@ -13,6 +13,11 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'solidus'
 gem 'solidus_auth_devise'
+platforms :mswin do 
+  gem "wdm", :group => [:development, :test]
+end
+gem 'uglifier'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -29,14 +34,10 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-group :production do
-  gem 'pg'
-end
-group :development, :test do
+gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
-end
+
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -49,3 +50,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'solidus_paypal_commerce_platform'

@@ -1,66 +1,225 @@
 <%= stylesheet_link_tag    'home' %>
+<%= javascript_include_tag 'home.js' %>
+
+<div class = "top">
+
+ <section class="banner">
+    <div class="imgBx">
+      <%= image_tag 'img4.jpg', class: 'active' %>
+      <%= image_tag 'img2.jpg' %>
+      <%= image_tag 'img3.jpg' %>
+      <%= image_tag 'img1.jpg' %>
+    </div>
+
+     <div class="contentBx">
+       <div class="active">
+          <h2>Slide Text One1</h2>
+          <p>最高の武器セット</p>
+          <a href="#">NEXT</a>
+       </div>
+       <div>
+          <h2>Slide Text One2</h2>
+          <p>最高の武器セット</p>
+          <a href="#">NEXT</a>
+   　　 </div>
+        <div>
+          <h2>Slide Text One3</h2>
+          <p>最高の武器セット</p>
+          <a href="#">NEXT</a>
+　　     </div>
+         <div>
+           <h2>Slide Text One4</h2>
+           <p>最高の武器セット</p>
+           <a href="#">NEXT</a>
+　　     </div>
+     </div>
+      <ul class="controls">
+      <li onclick="prevSlide();prevSlideText();"></li>
+        <li onclick="nextSlide();nextSlideText();"></li>
+      </ul>
+  </section>
+    <script type="text/javascript">
+      const imgBx = document.querySelector('.imgBx');
+      const slides = imgBx.getElementsByTagName('img');
+      var i = 0;
+
+      function nextSlide(){
+        slides[i].classList.remove('active');
+        i = (i + 1) % slides.length
+        slides[i].classList.add('active')
+      }
+
+      function prevSlide(){
+        slides[i].classList.remove('active');
+        i = (i - 1 + slides.length) % slides.length
+        slides[i].classList.add('active')
+      }
 
 
-<% content_for :sidebar do %>
-  <div data-hook="homepage_sidebar_navigation">
-    <%= render partial: 'spree/shared/taxonomies' %>
-  </div>
-<% end %>
+
+      const contentBx = document.querySelector('.contentBx');
+      const slidesText = contentBx.getElementsByTagName('div');
+      var j = 0;
+
+      function nextSlideText(){
+        slidesText[j].classList.remove('active');
+        j = (j + 1) % slidesText.length
+        slidesText[j].classList.add('active')
+      }
+
+      function prevSlideText(){
+        slidesText[j].classList.remove('active');
+        j = (j - 1 + slidesText.length) % slidesText.length
+        slidesText[j].classList.add('active')
+      }
+    </script>
+
+
+
+
+
 
 
 <div class="flex-list">
-    <div class="product-image">
-      <a href="https://weapons-app.herokuapp.com/products/hanmer">
-       <%= image_tag 'sword/sword2.jpg' %>
-       <p>商品名</p>
-       <p>100円</p>
+  <div class="container2">
+    <div class="card">
+      <div class="imgBx2">
+       <%= image_tag 'sword/sword2.jpg',:size => '230x120' %>
+      </div>
+       <div class="contentBx2">
+         <h2>sword</h2>
+        <div class="Size">
+         <h3>price</h3>
+         <span>700円</span>
+        </div>
+        <div class="Color">
+         <h3>Size :</h3>
+         <span>7</span>
+         <span>8</span>
+         <span>9</span>
+         <span>10</span>
+        </div>
+        <a href="#">Buy Now</a>
+       </div>
     </div>
-      </a>
-    
-    <div class="product-image">
-      <a href="https://weapons-app.herokuapp.com/products/hanmer">
-       <%= image_tag 'bow/bow1.jpg' %>
-       <p>商品名</p>
-       <p>100円</p>
+  </div>
+
+  <div class="container2">
+    <div class="card">
+      <div class="imgBx2">
+       <%= image_tag 'bow/bow1.jpg',:size => '230x120' %>
+      </div>
+       <div class="contentBx2">
+         <h2>bow</h2>
+        <div class="Size">
+         <h3>price</h3>
+         <span>700円</span>
+        </div>
+        <div class="Color">
+         <h3>Size :</h3>
+         <span>7</span>
+         <span>8</span>
+         <span>9</span>
+         <span>10</span>
+        </div>
+        <a href="#">Buy Now</a>
+       </div>
     </div>
-      </a>
-    
-     <div class="product-image">
-      <a href="https://weapons-app.herokuapp.com/products/hanmer">
-       <%= image_tag 'hammer/hammer2.jpg' %>
-       <p>商品名</p>
-       <p>100円</p>
-     </div>
-      </a>
-</div>
+  </div>
+
+  <div class="container2">
+    <div class="card">
+      <div class="imgBx2">
+       <%= image_tag 'hammer/hammer2.jpg',:size => '230x120' %>
+      </div>
+       <div class="contentBx2">
+         <h2>hammer</h2>
+        <div class="Size">
+         <h3>price</h3>
+         <span>700円</span>
+        </div>
+        <div class="Color">
+         <h3>Size :</h3>
+         <span>7</span>
+         <span>8</span>
+         <span>9</span>
+         <span>10</span>
+        </div>
+        <a href="#">Buy Now</a>
+       </div>
+    </div>
+  </div>
 
 
-<div class="flex-list2">
-    <div class="product-image2">
-      <a href="https://weapons-app.herokuapp.com/products/hanmer">
-       <%= image_tag 'rance/rance1' %>
-       <p>商品名</p>
-       <p>100円</p>
+  <div class="container2">
+    <div class="card">
+      <div class="imgBx2">
+       <%= image_tag 'rance/rance1.jpg',:size => '230x120' %>
+      </div>
+       <div class="contentBx2">
+         <h2>rance</h2>
+        <div class="Size">
+         <h3>price</h3>
+         <span>700円</span>
+        </div>
+        <div class="Color">
+         <h3>Size :</h3>
+         <span>7</span>
+         <span>8</span>
+         <span>9</span>
+         <span>10</span>
+        </div>
+        <a href="#">Buy Now</a>
+       </div>
     </div>
-    </a>
-    
-    <div class="product-image2">
-      <a href="https://weapons-app.herokuapp.com/products/hanmer">
-       <%= image_tag 'armor/armor2.jpg' %>
-       <p>商品名</p>
-       <p>100円</p>
+  </div>
+
+  <div class="container2">
+    <div class="card">
+      <div class="imgBx2">
+       <%= image_tag 'armor/armor2.jpg',:size => '230x120' %>
+      </div>
+       <div class="contentBx2">
+         <h2>armor</h2>
+        <div class="Size">
+         <h3>price</h3>
+         <span>700円</span>
+        </div>
+        <div class="Color">
+         <h3>Size :</h3>
+         <span>7</span>
+         <span>8</span>
+         <span>9</span>
+         <span>10</span>
+        </div>
+        <a href="#">Buy Now</a>
+       </div>
     </div>
-      </a>
-    
-    <div class="product-image2">
-      <a href="https://weapons-app.herokuapp.com/products/hanmer">
-       <%= image_tag 'other/ポーション01.jpg' %>
-       <p>商品名</p>
-       <p>100円</p>
-    </div>
-      </a>
-</div>
-    
+  </div>
 
 
-<%= render partial: 'template/footer' %>
+
+  <div class="container2">
+    <div class="card">
+      <div class="imgBx2">
+       <%= image_tag 'other/ポーション01.jpg',:size => '230x120' %>
+      </div>
+       <div class="contentBx2">
+         <h2>potion</h2>
+        <div class="Size">
+         <h3>price</h3>
+         <span>700円</span>
+        </div>
+        <div class="Color">
+         <h3>Size :</h3>
+         <span>7</span>
+         <span>8</span>
+         <span>9</span>
+         <span>10</span>
+        </div>
+        <a href="#">Buy Now</a>
+       </div>
+    </div>
+  </div>
+  </div>
+  </div>

@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_08_015449) do
+
+ActiveRecord::Schema.define(version: 2020_10_31_161817) do
 
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|
     t.integer "status", default: 0, null: false
@@ -72,6 +73,18 @@ ActiveRecord::Schema.define(version: 2020_10_08_015449) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  end
+
+
+  create_table "paypal_commerce_platform_sources", force: :cascade do |t|
+    t.integer "payment_method_id"
+    t.string "authorization_id"
+    t.string "capture_id"
+    t.string "paypal_email"
+    t.string "paypal_order_id"
+    t.string "refund_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "spree_addresses", force: :cascade do |t|
@@ -471,6 +484,8 @@ ActiveRecord::Schema.define(version: 2020_10_08_015449) do
     t.datetime "updated_at", precision: 6
     t.boolean "promotionable", default: true
     t.string "meta_title"
+
+    t.datetime "discontinue_on"
     t.index ["available_on"], name: "index_spree_products_on_available_on"
     t.index ["deleted_at"], name: "index_spree_products_on_deleted_at"
     t.index ["name"], name: "index_spree_products_on_name"
@@ -997,6 +1012,8 @@ ActiveRecord::Schema.define(version: 2020_10_08_015449) do
     t.datetime "updated_at", precision: 6
     t.string "cart_tax_country_iso"
     t.string "available_locales"
+
+    t.string "bcc_email"
     t.index ["code"], name: "index_spree_stores_on_code"
     t.index ["default"], name: "index_spree_stores_on_default"
   end
@@ -1084,6 +1101,8 @@ ActiveRecord::Schema.define(version: 2020_10_08_015449) do
     t.boolean "archived", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+
+    t.boolean "default_billing", default: false
     t.index ["address_id"], name: "index_spree_user_addresses_on_address_id"
     t.index ["user_id", "address_id"], name: "index_spree_user_addresses_on_user_id_and_address_id", unique: true
     t.index ["user_id"], name: "index_spree_user_addresses_on_user_id"
@@ -1127,6 +1146,8 @@ ActiveRecord::Schema.define(version: 2020_10_08_015449) do
     t.string "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
+
+    t.string "unconfirmed_email"
     t.index ["deleted_at"], name: "index_spree_users_on_deleted_at"
     t.index ["email"], name: "email_idx_unique", unique: true
     t.index ["reset_password_token"], name: "index_spree_users_on_reset_password_token_solidus_auth_devise", unique: true
@@ -1156,6 +1177,8 @@ ActiveRecord::Schema.define(version: 2020_10_08_015449) do
     t.integer "product_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+
+    t.boolean "apply_to_all", default: true, null: false
     t.index ["product_id"], name: "index_spree_variant_property_rules_on_product_id"
   end
 
