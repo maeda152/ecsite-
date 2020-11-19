@@ -2,6 +2,12 @@
 本番環境
 (AWS-EC2での構築)
 
+#### https://weapon-app.herokuapp.com/
+本番環境2
+(herokuでの構築)
+
+<br>
+
 #### https://qiita.com/Nakamura-Yasuhiro/private/f15b39dfa0e9f3ca005a
 railsとgitの基礎
 
