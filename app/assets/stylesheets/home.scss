@@ -490,9 +490,9 @@ margin-bottom: 30px;
 
 
 footer {
-background-color: #f4f4f4;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 font-size: 12px;
-width: 95%;
+width: 93%;
 }
 
 .footer_inner {
@@ -549,7 +549,7 @@ right: 0;
   object-fit: cover;
 }
 footer {
-  background-color: #f4f4f4;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   font-size: 12px;
   width: 90%;
 }
@@ -579,7 +579,7 @@ footer {
     }
       @media only screen and (max-width: 1200px){
       footer {
-        background-color: #f4f4f4;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         font-size: 12px;
         width: 90%;
     }
@@ -594,7 +594,7 @@ footer {
     }
       @media only screen and (max-width: 600px){
       footer {
-        background-color: #f4f4f4;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         font-size: 12px;
         width: 84%;
     }
@@ -608,7 +608,7 @@ footer {
           padding-left: 0rem;
       }
       footer {
-        background-color: #f4f4f4;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         font-size: 12px;
         width: 80%;
     }
@@ -618,7 +618,7 @@ footer {
       }
       @media only screen and (max-width: 400px){
       footer {
-          background-color: #f4f4f4;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
           font-size: 12px;
           width: 73%;
       }
