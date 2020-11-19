@@ -572,9 +572,10 @@ footer {
   }
   @media only screen and (max-width: 1400px){
     .flex-list {
-        display: flex;
+        margin: 0 auto;
+        display: table;
         margin-top: 9vh;
-        margin-left: 5rem;
+        padding-left: 0rem;
     }
     }
       @media only screen and (max-width: 1200px){
@@ -588,15 +589,16 @@ footer {
       footer {
         background-color: #f4f4f4;
         font-size: 12px;
-        width: 88%;
+        width: 84%;
     }
     }
 
     @media only screen and (max-width: 450px){
       .flex-list {
-          display: flex;
+          margin: 0 auto;
+          display: table;
           margin-top: 13vh;
-          margin-left: 1rem;
+          padding-left: 0rem;
       }
       footer {
         background-color: #f4f4f4;
@@ -614,9 +616,10 @@ footer {
           width: 73%;
       }
       .flex-list {
-        display: flex;
+        margin: 0 auto;
+        display: table;
+        padding-left: 0rem;
         margin-top: 13vh;
-        margin-left: -2rem;
     }
     }
 
