@@ -572,10 +572,9 @@ footer {
   }
   @media only screen and (max-width: 1400px){
     .flex-list {
-        margin: 0 auto;
-        display: table;
-        margin-top: 9vh;
-        padding-left: 0rem;
+      display: flex;
+      margin-top: 9vh;
+      margin-left: 5rem;
     }
     }
       @media only screen and (max-width: 1200px){
@@ -583,6 +582,14 @@ footer {
         background-color: #f4f4f4;
         font-size: 12px;
         width: 90%;
+    }
+    }
+    @media only screen and (max-width: 780px){
+      .flex-list {
+        margin: 0 auto;
+        display: table;
+        margin-top: 11vh;
+        padding-left: 0rem;
     }
     }
       @media only screen and (max-width: 600px){
