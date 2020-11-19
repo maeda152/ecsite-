@@ -17,7 +17,7 @@ footer{
   flex-flow: row wrap;
   padding: 50px;
   color: #fff;
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  background-color: #011c39;
   width: 100%;
   margin-left: 0rem;
 }
