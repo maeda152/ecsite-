@@ -492,7 +492,9 @@ margin-bottom: 30px;
 footer {
 background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 font-size: 12px;
-width: 95%;
+width: 100%;
+margin: 0;
+padding: 0;
 }
 
 .footer_inner {
@@ -548,10 +550,6 @@ right: 0;
   opacity: 1;
   object-fit: cover;
 }
-footer {
-  font-size: 12px;
-  width: 90%;
-}
 }
 @media only screen and (max-width: 700px){
 .flex-list {
@@ -575,12 +573,7 @@ footer {
       margin-top: 9vh;
       margin-left: 5rem;
     }
-    }
-      @media only screen and (max-width: 1200px){
-      footer {
-        font-size: 12px;
-        width: 90%;
-    }
+    
     }
     @media only screen and (max-width: 780px){
       .flex-list {
@@ -591,12 +584,6 @@ footer {
     }
     }
 
-      @media only screen and (max-width: 600px){
-      footer {
-        font-size: 12px;
-        width: 84%;
-    }
-    }
 
     @media only screen and (max-width: 450px){
       .flex-list {
@@ -605,19 +592,12 @@ footer {
           margin-top: 13vh;
           padding-left: 0rem;
       }
-      footer {
-        font-size: 12px;
-        width: 78%;
-    }
+
     .banner {
       margin-bottom: 0rem;
   }
       }
       @media only screen and (max-width: 400px){
-      footer {
-          font-size: 12px;
-          width: 73%;
-      }
       .flex-list {
         margin: 0 auto;
         display: table;
