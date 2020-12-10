@@ -17,6 +17,8 @@ mount SolidusPaypalCommercePlatform::Engine, at: '/solidus_paypal_commerce_platf
   get 'policy/index'
   get 'kiyaku/index'
   get 'guide/index'
+  get 'guide/handling'
+  get 'guide/rookie'
   get 'support/index'
   get 'g/support'
   get 'g/index'
