@@ -36,6 +36,9 @@ body {
   nav #main-nav-bar li#link-to-cart {
       float: left;
   }
+  nav #main-nav-bar li#link-to-cart a{
+    font-weight: 600;
+  }
   input[type="submit"], input[type="button"], input[type="reset"], button, a.button {
     background-color: #72d466;
   }
@@ -366,3 +369,16 @@ input[type="checkbox"], label {
             display: none;
         }
     }
+
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: 125%;
+      margin: 0;
+  }
+  
+  nav#top-nav-bar {
+    text-align: right;
+    margin-top: 40px;
+}
+

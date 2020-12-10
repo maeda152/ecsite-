@@ -1,11 +1,17 @@
 .-body {
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%)!important;
+
+
+h1{
+  margin: 0;
 }
 
 h4 {
   font-size: 30px;
+  margin-top: 0;
+  padding-top: 3rem;
 }
-
+}
 .wea_p {
   font-size: 20px;
   font-weight: bold;

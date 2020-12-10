@@ -41,7 +41,9 @@
     <header id="global_header">
       <div class="header_inner">
         <div class="header_logo">
+         <a href="/">
         <%= image_tag 'logo.png',:alt => '商品カタログ' ,:size =>'80x80' %>
+         </a>
           <h1>
             <a href="home.html">
             </a>
@@ -115,9 +117,6 @@
                     
                                 <li class="main-menu">                          
                                   <%= link_to "トップページ","/" %>
-                                </li>
-                                <li class="main-menu">
-                                  <%= link_to "サイトマップ","/sitemap/index" %>                                                                       
                                 </li>
                                 <li class="main-menu">                                              
                                   <%= link_to "お問い合わせ先", 'contacts/new' %>
